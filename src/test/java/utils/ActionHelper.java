@@ -39,10 +39,7 @@ public class ActionHelper {
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
-
-
     public static void closeBrowser() {
         getDriver().close();
     }
-
 }
