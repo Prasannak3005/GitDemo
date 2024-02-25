@@ -15,7 +15,7 @@ public class ActionHelper {
     public static WebElement findElement(By by) {
         return DriverManager.getDriver().findElement(by);
     }
-    public static WebDriver driver() {
+    public static WebDriver getDriver() {
         return DriverManager.getDriver();
     }
 
@@ -42,7 +42,7 @@ public class ActionHelper {
 
 
     public static void closeBrowser() {
-        driver().close();
+        getDriver().close();
     }
 
 }

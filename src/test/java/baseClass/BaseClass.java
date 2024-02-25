@@ -21,9 +21,9 @@ public class BaseClass {
     @AfterSuite
     public void quitDriver() {
         try {
-            System.out.println("driver  : " + ActionHelper.driver().toString());
-            if (!ActionHelper.driver().toString().contains("(null)"))
-                ActionHelper.driver().quit();
+            System.out.println("driver  : " + ActionHelper.getDriver().toString());
+            if (!ActionHelper.getDriver().toString().contains("(null)"))
+                ActionHelper.getDriver().quit();
         } catch (Exception e) {
         }
     }
